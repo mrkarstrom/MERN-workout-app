@@ -9,6 +9,7 @@ app.use((req, res, next) => {
   next();
 });
 
+// Routes to use
 app.use('/api/workouts', workoutRoutes);
 
 app.listen(process.env.PORT, () => {
